@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000
 
 
 // middleware
-app.use(cors())
+app.use(cors({origin:["http://localhost:5000", "https://simple-crud-server-lemon.vercel.app"]}))
 app.use(express.json())
 
 
